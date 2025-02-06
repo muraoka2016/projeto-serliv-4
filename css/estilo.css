@@ -1,0 +1,136 @@
+:root{
+    --background-header: #162028;
+    --color-text-menu: #425564;
+    --color-text: #555;
+    --background-img-detail: #003d52;
+    --background-footer-color: #0b171f;
+    --color-text-footer: #6f8597;
+    --font-family: 'Viaoda Libre', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-family: var(--font-family);
+}
+
+.header{
+    background-color: var(--background-header);
+    color: var(--color-text-menu);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    margin-left: 10em;
+    font-size: 1.5em;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin-right: 10em;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+li:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+.hero-img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.main-text{
+    max-width: 100em;
+    height: 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5em 2em;
+    padding: 3em 5em;
+    gap: 3em;
+}
+
+.main-title{
+    font-size: 3em;
+}
+
+.main-p{
+    padding: 0 18.5em;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5em 5em 5em 5em;
+}
+
+.model-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.secondary-text{
+    background-image: url('/Projeto-4/imagens/bg_detalhe.png');
+    background-color: var(--background-img-detail);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 25em;
+    text-align: left;
+    color: white;
+}
+
+.secondary-container{
+    margin: 0 20em;
+    padding: 5em 5em;
+}
+
+.secondary-title{
+    font-size: 1.5em;
+}
+
+.secondary-p{
+    padding: 2em 0;
+    font-size: 1.1em;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--background-footer-color);
+    color: var(--color-text-footer);
+    height: 3em;
+    box-sizing: border-box;
+}
+
+.footer-p{
+    padding: 0.8em 0;
+    margin: 0;
+}
